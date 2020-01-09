@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "forceConsistentCasingInFileNames":true,
-    "removeComments": true,
-    "importHelpers": true,
     "module": "commonjs",
-    "target": "es2016",
-    "jsx": "preserve"
+    "target": "esnext",
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",

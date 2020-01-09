@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/", "dest": "/api/index.ts" }
+    { "src": "/characters", "dest": "/api/characters.ts" }
   ]
 }
