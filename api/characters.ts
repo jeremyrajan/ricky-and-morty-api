@@ -26,7 +26,7 @@ export default async (request: NowRequest, response: NowResponse) => {
     });
 
     const episodePromiseResults = await Promise.all(promises);
-    const episodes = episodePromiseResults.reduce(
+    const episodes = episodePromiseResults.flat().reduce(
       (accumulator, episode: IEpisode) => ({ ...accumulator, [episode.id]: episode }),
       {}
     );
