@@ -3,12 +3,9 @@
     {
       "src": "/characters",
       "dest": "/api/characters.ts",
-      "headers" : [
-        {
-          "key" : "Access-Control-Allow-Origin",
-          "value" : "*"
-        }
-      ]
+      "headers" : {
+        "Access-Control-Allow-Origin" : "*"
+      }
     },
     { "src": "/", "dest": "/index.html" }
   ]
