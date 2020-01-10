@@ -1,6 +1,15 @@
 {
   "routes": [
-    { "src": "/characters", "dest": "/api/characters.ts" },
+    {
+      "src": "/characters",
+      "dest": "/api/characters.ts",
+      "headers" : [
+        {
+          "key" : "Access-Control-Allow-Origin",
+          "value" : "*"
+        }
+      ]
+    },
     { "src": "/", "dest": "/index.html" }
   ]
 }
